@@ -1,0 +1,99 @@
+
+/* SECCIÓN CONTACTO */
+.contacto {
+  min-height: 85vh;
+  background: linear-gradient(135deg, #ffe4ef, #fff5f8, #ffd6e7);
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 20px;
+}
+
+/* CONTENEDOR */
+.contacto .container {
+  max-width: 850px;
+  background: #ffffff;
+  padding: 55px 40px;
+  border-radius: 30px;
+  border: 3px solid #ffb6d2;
+  box-shadow: 0 10px 30px rgba(255, 105, 160, 0.2);
+  position: relative;
+  text-align: center;
+}
+
+/* DECORACIÓN */
+.contacto .container::before {
+  content: "🎀";
+  position: absolute;
+  top: -30px;
+  left: 25px;
+  font-size: 50px;
+}
+
+.contacto .container::after {
+  content: "💗";
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  font-size: 40px;
+}
+
+/* ETIQUETA */
+.contacto .etiqueta {
+  display: inline-block;
+  background: #ffe0ed;
+  color: #e75491;
+  padding: 9px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border: 1px solid #ffb6d2;
+}
+
+/* TITULO */
+.contacto h1 {
+  color: #ed5b99;
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 35px;
+  text-shadow: 2px 2px 0 #ffe0ed;
+}
+
+/* INFORMACIÓN */
+.contacto p {
+  background: #fff0f6;
+  color: #a64d75;
+  padding: 18px;
+  border-radius: 18px;
+  margin: 15px auto;
+  max-width: 600px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid #ffd1e3;
+  transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER */
+.contacto p:hover {
+  background: #ffd6e7;
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(255, 105, 160, 0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .contacto .container {
+    padding: 45px 20px;
+  }
+
+  .contacto h1 {
+    font-size: 27px;
+  }
+
+  .contacto p {
+    font-size: 15px;
+    padding: 15px;
+  }
+}

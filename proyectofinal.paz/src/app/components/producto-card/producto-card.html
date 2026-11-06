@@ -1,0 +1,24 @@
+<div class="col-md4 mb-4">
+    <div class="card shadow h-100">
+        <img [src]="productos.imagen" 
+        [alt]="productos.nombre"
+        class="card-img-top">
+
+        <div class="card-body">
+            <h5>{{productos.nombre}}</h5>
+            <p>{{productos.descripcion}}</p>
+            <p>{{productos.precio}}</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-pink w-100"
+                (click)="onAgregar()">
+                Agregar al Carrrito
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+</div>

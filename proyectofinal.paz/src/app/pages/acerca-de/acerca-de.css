@@ -1,0 +1,119 @@
+/* SECCIÓN NOSOTROS */
+.nosotros {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4ef, #fff5f8, #ffd6e7);
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 70px 20px;
+}
+
+/* CONTENEDOR */
+.nosotros .container {
+  background: white;
+  padding: 55px;
+  border-radius: 30px;
+  border: 3px solid #ffb6d2;
+  box-shadow: 0 10px 35px rgba(255, 105, 160, 0.2);
+  position: relative;
+}
+
+/* DECORACIONES */
+.nosotros .container::before {
+  content: "🎀";
+  position: absolute;
+  top: -30px;
+  right: 35px;
+  font-size: 55px;
+}
+
+.nosotros .container::after {
+  content: "💗";
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  font-size: 35px;
+}
+
+/* ETIQUETA */
+.nosotros .etiqueta {
+  display: inline-block;
+  background: #ffe0ed;
+  color: #e75491;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border: 1px solid #ffb6d2;
+}
+
+/* TITULO PRINCIPAL */
+.nosotros h1 {
+  color: #ed5b99;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 0 #ffe0ed;
+}
+
+/* PÁRRAFOS */
+.nosotros p {
+  color: #9c5676;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+/* SUBTITULO */
+.nosotros h2 {
+  color: #e75491;
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* BOTÓN */
+.nosotros .btn-verde {
+  display: inline-block;
+  background: #ff80ad;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #ff80ad;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+/* EFECTO BOTÓN */
+.nosotros .btn-verde:hover {
+  background: #ec4f8b;
+  border-color: #ec4f8b;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 7px 18px rgba(236, 79, 139, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nosotros .container {
+    padding: 35px 22px;
+  }
+
+  .nosotros h1 {
+    font-size: 29px;
+  }
+
+  .nosotros h2 {
+    font-size: 22px;
+  }
+
+  .nosotros p {
+    font-size: 15px;
+  }
+}
